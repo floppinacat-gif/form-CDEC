@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    background-image: url("Photos/background.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Photos/form-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 600px;
+
+}
+
+.Form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+* {
+    cursor: url("./Photos/cursor.png") 0 0, auto;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.terms {
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #F5ACC4;
+}
+
+input {
+    background-color: #FBDFE9;
+    border-radius: 12px;
+    height: 30px;
+    border-top: 0;
+    border-right: 0;
+    border-color: #F5ACC4;
+    border-left: 0;
+    transition: all 0.3s ease;
+}
+
+input:hover {
+    transform: scale(1.05);
+}
+a{
+    color: #F5ACC4;
+}
+button{
+    background-color: #F5ACC4;
+    border: 0;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    padding: 12px;
+}
+h3{
+        font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+button:hover {
+    transform: scale(1.05);
+}
+.check{
+    margin: 12px;
+    accent-color:#F5ACC4 ;
+}
+#Message, #PhoneMessage {
+    color: #ff4f91;
+    font-size: 14px;
+    text-align: center;
+    margin: 5px;
+    font-weight: bold;
+}
+.tel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pass{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.password-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-left: 47px;
+}
+.success-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: #FDEEF4;
+background: radial-gradient(circle, rgba(253, 238, 244, 1) 0%, rgba(251, 223, 233, 1) 75%, rgba(245, 172, 196, 1) 100%);
+    padding: 19px;
+    border-color: #F5ACC4;
+}
+.success {
+    position: fixed;
+    inset: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.Happykitty{
+    height: 200px;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+form {
+    max-width: 100%;
+    padding: 24px;
+}
+
+input:not([type="checkbox"]) {
+    width: 250px;
+    max-width: 100%;
+}
+
+.Form {
+    padding: 16px;
+}
+.success {
+    background: rgba(0, 0, 0, 0.35);
+    padding: 16px;
+}
+
+.success-box {
+    max-width: 100%;
+    text-align: center;
+}
+
+.Happykitty {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+@media (max-width: 1024px) {
+    form {
+        width: 520px;
+        height: auto;
+        min-height: 560px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}
+@media (max-width: 600px) {
+    .Form {
+        padding: 12px;
+    }
+
+    form {
+        width: 100%;
+        min-height: 0;
+        padding: 32px 16px;
+        background-size: 100% 100%;  
+    }
+
+    h1 {
+        font-size: 1.4rem;
+        margin-top: 0;
+    }
+
+    input:not([type="checkbox"]) {
+        width: 220px;
+        height: 34px;     
+        font-size: 16px;    
+    }
+
+    .password-container {
+        margin-left: 0;
+        flex-wrap: nowrap;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .password-container input {
+        width: 190px;
+    }
+
+    .terms {
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        text-align: left;
+    }
+
+    .terms p {
+        margin: 0;
+    }
+
+    #Message, #PhoneMessage {
+        font-size: 12px;
+    }
+
+    .success-box {
+        padding: 16px;
+    }
+
+    .success-box h2 {
+        font-size: 1.1rem;
+    }
+
+    .success-box h4 {
+        font-size: 0.85rem;
+    }
+
+    .Happykitty {
+        max-height: 140px;
+    }
+    input:hover,
+    button:hover {
+        transform: none;
+    }
+}
+@media (max-width: 380px) {
+    input:not([type="checkbox"]) {
+        width: 190px;
+    }
+
+    .password-container input {
+        width: 160px;
+    }
+}

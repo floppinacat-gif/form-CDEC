@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Actor&family=Lobster&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/318427202c.js" crossorigin="anonymous"></script>
+    <title>Create an account</title>
+</head>
+
+<body>
+    <section>
+        <div class="Form">
+            <form action="">
+                <h1>Create an account</h1>
+
+                <label>
+                    <input type="text" name="fullname" placeholder="Enter your full name" required>
+                </label>
+                <br>
+                <label>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                </label>
+                <br>
+                <label>
+                    <div class="password-container">
+                        <input type="password" name="password" placeholder="Password" required id="Password">
+                        <button type="button" onclick="togglePassword('Password', this)"><i class="fa-solid fa-eye"></i></button>
+                    </div>
+                </label>
+                <br>
+                <label class="pass">
+                    <div class="password-container">
+                        <input type="password" placeholder="Confirm password" required id="ConfirmPassword">
+                        <button type="button" onclick="togglePassword('ConfirmPassword', this)"><i class="fa-solid fa-eye"></i></button>
+                    </div>
+                    <p id="Message"></p>
+                </label>
+                <br>
+                <label class="tel">
+                    <input type="tel" name="phone" placeholder="+213 xxx xxx xxx" id="Phone" required>
+                    <p id="PhoneMessage"></p>
+                </label>
+                <label class="terms">
+                    <input type="checkbox" required class="check">
+                    <p>agree to the <a href="#">terms and conditions</a></p>
+                </label>
+
+                <button type="submit">Create account</button>
+            </form>
+
+            <div id="SuccessMessage" class="success" style="display: none;">
+    <div class="success-box">
+        <h2>Account created successfully!</h2>
+        <h4>Welcome! Your account is ready<i class="fa-regular fa-heart"></i></h4>
+        <img src="Photos/ezgif.com-remove-background.gif" alt="Happy kitty" class="Happykitty">
+        <button type="button" onclick="closeSuccess()">OK</button>
+    </div>
+</div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
